@@ -4780,6 +4780,10 @@ html {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  .spark-square-image-card:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
   }
   
   .spark-wrapped-card {
