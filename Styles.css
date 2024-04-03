@@ -2017,7 +2017,7 @@ html {
     text-align: left;
     cursor: pointer;
     color: #222;
-    background-color: #ddd;
+    background-color: #ffffff;
     padding: 9px 30px;
     text-decoration: none;
     display: inline-block;
@@ -2637,18 +2637,9 @@ html {
     height: 1px;
   }
   
-  .premium {
-    background-color: #fafafa;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 30px;
-    display: flex;
-  }
+
   
-  .premium.cc-background {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
+
   ._2-row-image.cc-bottom {
     margin-right: 0;
   }
@@ -2897,57 +2888,7 @@ html {
     margin-bottom: 30px;
     display: flex;
   }
-  
-  .premium-banner {
-    background-image: url("https://assets-global.website-files.com/6606ff80af3261a38a6224a4/6606ff80af3261a38a62251c_image-premium-banner.jpg");
-    background-position: 50%;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    max-height: 720px;
-    padding: 120px 30px;
-    display: flex;
-  }
-  
-  .premium-banner-inner {
-    background-color: var(--medium-sea-green);
-    max-width: 370px;
-    padding: 60px 50px;
-  }
-  
-  .premium-intro {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 30px;
-    display: flex;
-  }
-  
-  .premium-image-banner {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    max-height: 720px;
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .premium-image-container {
-    background-color: #fff;
-    border: 1px solid #f7f7f7;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1170px;
-    margin-top: -60px;
-    margin-bottom: 120px;
-    padding: 40px 60px;
-    display: flex;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
-  }
-  
+    
   .image-banner {
     margin-right: 60px;
   }
@@ -4510,7 +4451,7 @@ html {
   }
   
   .kutup-medium-container {
-    max-width: 1100px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -4661,10 +4602,11 @@ html {
   }
   
   .kutup-large-container-2 {
-    max-width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    flex-wrap: wrap;
   }
   
   .kutup-cta-2 {
@@ -5048,10 +4990,7 @@ html {
       width: 80%;
     }
   
-    .premium-image-container {
-      margin-top: 0;
-    }
-  
+    
     .container-quote {
       width: 100%;
     }
@@ -5144,6 +5083,7 @@ html {
     .icon-2 {
       color: #fff;
       font-size: 32px;
+      background-image: url('Images/icons8-menu-50.png');
     }
   
     .menu-button:active, .menu-button.w--open {
@@ -5313,10 +5253,7 @@ html {
       padding-bottom: 55px;
     }
   
-    .premium {
-      padding-top: 60px;
-      padding-bottom: 90px;
-    }
+   
   
     ._2-row-image {
       max-width: 100%;
@@ -5410,14 +5347,9 @@ html {
       width: 100%;
     }
   
-    .premium-intro {
-      padding-top: 90px;
-      padding-bottom: 90px;
-    }
+ 
   
-    .premium-image-container {
-      margin-bottom: 90px;
-    }
+   
   
     .about-intro {
       padding-top: 85px;
@@ -5608,8 +5540,33 @@ html {
   @media screen and (max-width: 479px) {
     .navigation-container {
       height: 60px;
+ }
+ .image-6 {
+  width: 120px;
+  margin-top: 50px; /* Adjust the value as needed to move the element lower */
+  padding-top: 0;
+}
+          
+    body {
+      font-size: 12px; /* Adjusted font size for smaller screens */
+      line-height: 18px; /* Adjusted line height for smaller screens */
+  }
+    .kutup-qoute-big-text {
+      font-size: 20px;
     }
-  
+    .kutup-setup-heading {
+      font-size: 14px;
+      line-height: 1;
+    }
+    .kutup-cta-2 {
+      padding: 20px 5%; /* Further reduce padding for smaller screens */
+  }
+  .kutup-testimonials-section {
+    padding: 20px 5%; /* Further reduce padding for smaller screens */
+}
+.kutup-medium-container {
+  max-width: 90%; /* Adjusted max-width for smaller screens */
+}
     .header {
       height: 100vh;
       margin-top: -60px;
@@ -5678,28 +5635,16 @@ html {
       padding-bottom: 150px;
     }
   
-    .premium-banner {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+    .clients-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: -20px;
+  }
   
-    .premium-banner-inner {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+
   
-    .premium-intro {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-  
-    .premium-image-container {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 60px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+   
   
     .image-banner {
       margin-bottom: 30px;
@@ -5740,12 +5685,15 @@ html {
     }
   
     .container-3 {
-      max-width: none;
+      max-width: 100%;
     }
   
     .clients-image {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 50px; /* Adjusted width for smaller screens */
+      height: 50px; /* Adjusted height for smaller screens */
+    
     }
   
     .container-4 {
@@ -5811,12 +5759,16 @@ html {
     }
   
     .kutup-setup-right-part {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   
     .kutup-setup-left-part {
-      padding: 19px 26px 34px;
+         min-height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    
     }
   
     .kutup-footer-horizontal-flex {
