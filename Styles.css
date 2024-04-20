@@ -1023,7 +1023,7 @@ textarea.w-input, textarea.w-select {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-  background-color: firebrick;
+  background-color: white;
   padding: 6%; /* Padding around the grid container */
   margin: 20px;
   gap: 50px;
