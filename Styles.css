@@ -1023,7 +1023,7 @@ textarea.w-input, textarea.w-select {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-  background-color: white;
+  background-color: firebrick;
   padding: 6%; /* Padding around the grid container */
   margin: 20px;
   gap: 50px;
@@ -5194,6 +5194,7 @@ figcaption {
 
   .logos-title-large {
     padding: 60px 15px;
+    background-color: white;
   }
 
   .clients-wrapper {
@@ -5206,6 +5207,9 @@ figcaption {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .clients-image:hover {
+    transform: scale(1.1); /* Increase the scale to make the image pop */
   }
 
   .team-slider {
@@ -5335,7 +5339,10 @@ figcaption {
     padding-bottom: 60px;
     display: block;
   }
-
+  .logos-title-large {
+    padding: 60px 15px;
+    background-color: white;
+  }
   .h1 {
     letter-spacing: 0;
     margin-left: 0;
@@ -5519,6 +5526,9 @@ figcaption {
     height: 100px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .clients-image:hover {
+    transform: scale(1.1); /* Increase the scale to make the image pop */
   }
 
   .container-4 {
